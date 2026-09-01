@@ -13,6 +13,11 @@ final class RelationshipsLivewireServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'genealogy-relationships-livewire');
         Livewire::component('genealogy-relationships-list', RelationshipList::class);
+        Livewire::component('genealogy-relationships-editor', RelationshipEditor::class);
+        Livewire::component('module-genealogy-relationships::relationship-list', RelationshipList::class);
+        Livewire::component('module-genealogy-relationships::relationship-editor', RelationshipEditor::class);
+        Livewire::component('genealogy-relationships-calculator', RelationshipCalculator::class);
+        Livewire::component('module-genealogy-relationships::relationship-calculator', RelationshipCalculator::class);
     }
 }
 
